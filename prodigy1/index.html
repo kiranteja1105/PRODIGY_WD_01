@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awesome Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">MyAwesomeWebsite</h1>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li class="dropdown">
+                    <a href="#features">Features</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#feature1">Advanced Analytics</a></li>
+                        <li><a href="#feature2">Customizable Themes</a></li>
+                        <li><a href="#feature3">Real-Time Chat</a></li>
+                    </ul>
+                </li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="toggle-button" onclick="toggleMenu()">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Welcome to MyAwesomeWebsite</h1>
+            <p>Your solution for a fully customizable, feature-rich web experience.</p>
+            <a href="#features" class="btn animate">Explore Features</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2>Our Features</h2>
+            <div class="features-grid">
+                <div class="feature-item hover-effect" id="feature1">
+                    <h3>Advanced Analytics</h3>
+                    <p>Get detailed insights and analytics to understand user behavior and optimize your strategies.</p>
+                </div>
+                <div class="feature-item hover-effect" id="feature2">
+                    <h3>Customizable Themes</h3>
+                    <p>Personalize your website with easy-to-use themes and color schemes to match your brand.</p>
+                </div>
+                <div class="feature-item hover-effect" id="feature3">
+                    <h3>Real-Time Chat</h3>
+                    <p>Enable real-time chat to engage with your users instantly and provide quick support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>At MyAwesomeWebsite, we focus on delivering powerful, customizable web solutions that cater to businesses and individuals alike. Our mission is to empower users with advanced tools and features, helping them achieve their goals online with ease and efficiency.</p>
+            <div class="about-metrics">
+                <div class="metric">
+                    <h3>10K+</h3>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="metric">
+                    <h3>50+</h3>
+                    <p>Custom Themes</p>
+                </div>
+                <div class="metric">
+                    <h3>99%</h3>
+                    <p>Satisfaction Rate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn animate">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
